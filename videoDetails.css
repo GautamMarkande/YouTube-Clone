@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+}
+.main_container{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.main_right_container{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    /* justify-content: start; */
+}
+.tags{
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.main_right_container .tags div{
+    width: fit-content;
+    padding: 5px 10px;
+    border: 1px solid #AAA;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.main_right_container img{
+    width: 150px;
+    height: 120px;
+    border: 1px solid #AAA;
+}
+.main_right_container .video_card > div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.main_right_container .video_card {
+    display: flex;
+    width: 100%;
+    height: 130px;
+    flex-direction: row;
+    justify-content: start;
+    /* border: 2px solid red; */
+    align-items: start;
+    gap: 10px;
+}
+.main_right_container .video_card>div>p{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.main_right_container .video_card>div>b{
+    color: #AAA;
+}
+.videoplay_container{
+    /* border: 2px solid red; */
+    grid-column: span 3;
+    padding: 0px 20px;
+}
+.Play_video_container{
+    /* border: 2px solid yellow; */
+    height: 500px;
+}
+.statistic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #AAA;
+}
+
+.statistic .like_dislike_container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.statistic .like_dislike_container div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 10px;
+}
+.videoplay_information_container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 0.5px solid #AAA;
+    padding: 10px 20px;
+}
+.videoplay_information_container >p{
+    font-size: 20px;
+}
+.subscribe_container,.videoplay_Description_and_all_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+.videoplay_Description_and_all_container{
+    border-bottom: 1px solid #AAA;
+}
+.subscribe_container .left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.subscribe_container .left div >p{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+}
+.subscribe_container .left div >b{
+    color: #AAA;
+    font-size: 15px;
+}
+.subscribe_container .right .subscribeBtn{
+    background-color:#CC0000;
+    padding: 10px 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.subscribe_container .left img{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+}
+.videoplay_comments_and_all_container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.videoplay_comments_and_all_container .total_comments_and_sort{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    gap: 30px;
+    padding-top: 20px;
+}
+.videoplay_comments_and_all_container .total_comments_and_sort>div{
+    display: flex;
+}
+.write_comment{
+    display: flex;
+    /* border-bottom: 1px solid #AAA; */
+    gap: 10px;
+    padding: 20px 0px;
+}
+.write_comment img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.write_comment input{
+    color: #AAA;background-color:inherit;
+    outline: none;
+    border-bottom:1px solid #AAA;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-size: 15px;
+    text-align: start;
+    width: 100%;
+}
+.all_comments_container{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+.all_comments_container>div>div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #AAA;
+}
+.all_comments_container>div>div img{
+  width: 20px;
+  height: 20px;
+}
+.all_comments_container>div>div p{
+    font-size: 15px;
+
+}
+.all_comments_container>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.all_comments_container>div>p{
+    font-size: 18px;
+}
+.all_comments_container img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
