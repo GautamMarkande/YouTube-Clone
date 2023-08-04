@@ -1,4 +1,6 @@
-const apiKey = "AIzaSyB6qKHCCXMl1j_npfhzTbWOiww26OXJ0OE";
+
+//AIzaSyDopaAwT9Ke8kDIj5Y1AWJvR-0PCkhTHU
+const apiKey = "AIzaSyBsh14p8Ao_Go6YZIghxCM1tPy3vkKSHbU";
 const baseUrl = "https://www.googleapis.com/youtube/v3";
 let idOfClickedVideo = localStorage.getItem("key");
 console.log(idOfClickedVideo);
